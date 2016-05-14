@@ -1,0 +1,84 @@
+ <html>
+    <head>
+        <link href="resource\icon.png" rel="shortcut icon" /> 
+        <title>Black Jack</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=gb2312"/>
+    </head>
+    <style type="text/css">
+            table th
+            {
+                    text-align: center;
+                    text-decoration: none;
+                    font-weight: normal;
+                    padding: 3px 6px 3px 6px;
+                    width:200px;
+            } 
+            table td
+            {
+                    vertical-align: center;
+                    text-align: center;
+                    padding: 3px 6px 3px 6px;
+                    margin: 0px;
+            }
+            h3
+            {color:white;
+            padding:25px;
+             }
+    </style> 
+    <body>
+        <!--<background pic>-->
+    <img border="0" src="resource\tableBackground.png" width="100%" height="100%" 
+     style="position: absolute;left:0px;top:0px;z-index: -1"/> 
+    <table width="100%">
+      <tr> 
+          <!--<logo line>-->
+        <td>
+          <div align="center">
+            <img src="resource\Logo.png"  width="1018" height="200"/> 
+          </div>
+        </td>
+      </tr>
+      <!--<tableboard part>-->
+    </table>
+      <hr>
+        <table id="tableboard">
+      <tr>
+                <td id="player1"><img src="resource\dealer.png" width="112px" height="112px"/></td>
+        <td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+            </tr>
+      <tr>
+                <td id="player2"><img src="resource\dealer.png" width="112px" height="112px"/></td>
+        <td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/><td/>
+            </tr>
+    </table>
+    <hr>
+      <!--<score and button part>-->
+    <table>
+      <tr> 
+          <!--<audio player>-->
+        <td>
+          <div align="left">
+            <audio controls="controls" width="50" height="50" autoplay="true" loop="true"/>
+            <source src="League of Legends - Snowdown 2015.mp3" type="audio/mp3" />
+            <!--<source src="6 INCH.ogg" type="audio/ogg" />-->
+            </audio>
+          </div> 
+        </td>
+          <!--<show scores>-->
+        <td>
+          <div id="score" align="left"></div>
+        </td>
+        <td>
+          <div id="bulletin"><h3>Please make a choice.</h3></div>
+        </td>
+      </tr>
+    </table>
+    <!--<buttons to game>-->
+    <hr>
+    <input type="button" id="hit" value="Hit" onclick="hit();" />
+    <input type="button" id="stand" value="Stand" onclick="stand();" />
+    <!--<input type="button" id="restart" value="Game Again" onclick="location.reload();" />-->
+    <input type="button" id="restart" value="Game Again" onclick="restart();" />
+    <script src="Black_Jack.js"></script>
+    </body>
+</html>
